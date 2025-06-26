@@ -179,7 +179,8 @@ async def smart_split(
             # Normalize text (original logic)
             processed_text = text_part_raw
             if settings.advanced_text_normalization and normalization_options.normalize:
-                if lang_code in ["a", "b", "en-us", "en-gb"]:
+                # if lang_code in ["a", "b", "en-us", "en-gb"]:
+                if lang_code in ["a", "b", "en-us", "en-gb", "f", "e", "fr-fr", "es-es"]:
                     processed_text = CUSTOM_PHONEMES.sub(
                         lambda s: handle_custom_phonemes(s, custom_phoneme_list), processed_text
                     )

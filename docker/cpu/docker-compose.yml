@@ -1,4 +1,4 @@
-name: kokoro-fastapi-cpu
+#name: kokoro-fastapi-cpu
 services:
   kokoro-tts:
     build:
